@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/goods_box"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_toRightOf="@id/goods_box"
+        android:layout_marginLeft="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:text="案发时的"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/goods_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:text="案发时的"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="#E91E63"
+        android:layout_alignBottom="@id/goods_image"
+        android:layout_toRightOf="@id/goods_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.bawei.xutao.view.MyAddView
+        android:id="@+id/goods_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.bawei.xutao.view.MyAddView>
+
+</RelativeLayout>

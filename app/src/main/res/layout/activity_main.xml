@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp">
+
+            <ImageView
+                android:background="@drawable/login_icon_phone_n_hdpi"
+                android:id="@+id/imgone"
+                android:layout_width="45dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="60dp"/>
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_alignBottom="@+id/imgone"
+                android:layout_toRightOf="@+id/imgone"
+                android:hint="手机号"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/imgtwo"
+                android:src="@drawable/login_icon_lock_n_hdpi"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="60dp"/>
+
+            <EditText
+                android:id="@+id/edit_pwd"
+                android:layout_alignBottom="@+id/imgtwo"
+                android:layout_toRightOf="@+id/imgtwo"
+                android:hint="登录密码"
+                android:textColor="#F0ECEC"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp">
+
+            <CheckBox
+                android:id="@+id/jizhu"
+                android:text="记住密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="快速注册"
+                android:layout_centerVertical="true"
+                android:id="@+id/register"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:textColor="#F0EAEA"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/yj"
+            android:id="@+id/login"
+            android:text="登录"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

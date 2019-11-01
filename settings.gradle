@@ -1,0 +1,2 @@
+include ':app', ':xutao20191018aft', ':xutao20191101'
+rootProject.name='Xutao20191016aft'

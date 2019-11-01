@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/shop_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ExpandableListView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <CheckBox
+            android:id="@+id/shop_checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="全选"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/shop_text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shop_checkAll"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:text="合计"
+            android:textColor="#000"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/shop_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shop_text_num"
+            android:paddingVertical="10dp"
+            android:paddingRight="10dp"
+            android:text="￥ 0.00"
+            android:textColor="#f00"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/shop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#FF808E"
+            android:paddingHorizontal="40dp"
+            android:text="去结算"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
